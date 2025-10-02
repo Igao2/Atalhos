@@ -85,7 +85,7 @@
    
     .links{display:flex;flex-direction:column;gap:10px}
     .card-link{padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.55),rgba(255,255,255,0.4));border:1px solid rgba(74,163,194,0.06);text-decoration:none;color:var(--text);display:flex;justify-content:space-between;align-items:center}
-
+    .card-link:hover{background:var(--panel);box-shadow:0 6px 18px rgba(9,30,46,0.04)}
     footer{margin:36px 0;text-align:center;color:var(--muted);font-size:13px}
 
     @media (max-width:820px){
@@ -109,7 +109,11 @@
       <nav class="nav-links">
         <a href="#atalhos-windows">Atalhos Windows</a>
         <a href="#atalhos-word">Atalhos Word</a>
+         <a href="#formulas-excel">Fórmulas Excel</a>
+         <a href="#formulas-sheets">Fórmulas Google Sheets</a>
+         <a href="#lin">Links</a>
         <a href="#sobre">Sobre</a>
+       
       </nav>
     </div>
   </header>
@@ -214,10 +218,173 @@
       </div>
     </section>
 
+    <section id="formulas-excel">
+      <h2 id="titulo-word">Fórmulas - Excel</h2>
+      <p class="lead">Principais fórmulas do excel</p>
 
+      <div class="grid">
+        <div>
+          <h3>Atalhos Básicos</h3>
+          <h2>Função SOMA</h2>
+<p><span style="font-weight: 300;">A <a href="https://funcaoexcel.com.br/funcoes-de-soma/">Função SOMA</a> calcula o total de todos os números que você especificar como argumentos. Cada argumento pode ser um intervalo, uma referência de célula, uma matriz, uma constante, uma fórmula ou o resultado de outra função. Por exemplo, =SOMA(B4;B5;B7) irá somar os números contidos nas células  B4, B5 e B7. Outro exemplo: =SOMA(B4:B8) irá somar todos os números contidos no intervalo de células que vai de B4 a B8. A sintaxe que foi usada é importante: note que na primeira foi utilizado o sinal de ponto e vírgula e na segunda, o de dois pontos. Isso é importante porque ponto e vírgula mede as células individualmente e o dois pontos significa um intervalo, ou seja, tudo que está dentro da referência especificada.</span></p>
+<p><a href="https://funcaoexcel.com.br/funcoes-de-soma/" target="_blank" rel="noopener noreferrer">https://funcaoexcel.com.br/funcoes-de-soma/</a></p>
+<h2>Função MÉDIA</h2>
+<p><span style="font-weight: 300;">Nesse cálculo, o Excel soma os valores dos elementos relacionados e divide pela quantidade desses elementos, chegando assim a um valor médio entre eles. </span></p>
+<p><span style="font-weight: 300;">No nosso primeiro exemplo, vamos fazer a média de todos os valores, no total são 10 células. Portanto, o Excel vai somar todos os valores e dividir por 10, que é a quantidade de células. Isso porque a sintaxe foi =MÉDIA(B4:B13).</span></p>
+<p><span style="font-weight: 300;">No segundo exemplo, vamos selecionar somente 5 células e então pedir a média entre elas. A sintaxe é =MÉDIA(B5;B8;B11;B13;B10). Note que o Excel somou o conteúdo dessas células e dividiu por 5, pois esse é o número de células que foram somadas.</span></p>
+<p><img data-recalc-dims="1" decoding="async" class="size-medium wp-image-4977 aligncenter" src="https://i0.wp.com/funcaoexcel.com.br/wp-content/uploads/2018/08/1073-2-257x300.jpg?resize=257%2C300&#038;ssl=1" alt="Exemplo Função Média" width="257" height="300" /></p>
+<p>&nbsp;</p>
+<h3>Dicas de Concurso:</h3>
+<p><span style="font-weight: 300;">Mesmo que os termos da web e da informática geralmente ignorem o acento das palavras, o nome da função é mesmo =MÉDIA, com acento. Se estiver escrita sem o acento, a alternativa está errada. Não se deixe enganar!</span></p>
+<p><span style="font-weight: 300;">Cuidado com as funções de nomes parecidos. No Excel existe, além da função média, a função mediana, representada por =MED, que muita gente confunde. Mesmo que os nomes se pareçam, a usabilidade delas é muito diferente do esperado (além de resultar em um erro na correção da prova).</span></p>
+<h2>Funções MÁXIMO e MÍNIMO</h2>
+<p><span style="font-weight: 300;">Essas funções têm praticamente a mesma utilidade, mas de lados opostos. Uma delas retorna o valor máximo e a outra, o valor mínimo entre os valores selecionados. A sintaxe é =MÁXIMO(célula isolada ou intervalo de célula) e =MÍNIMO(célula isolada ou intervalo de célula).</span></p>
+<p>Novamente, não se esqueça do acento no nome das funções.</p>
+<p><a href="https://funcaoexcel.com.br/maximominimo-e-maiormenor/" target="_blank" rel="noopener noreferrer">https://funcaoexcel.com.br/maximominimo-e-maiormenor/</a></p>
+<h2>Função MAIOR e MENOR</h2>
+<p><span style="font-weight: 300;">Essa função permite saber qualquer classificação em uma lista. Por exemplo, o terceiro maior valor, oitavo menor, etc. Nela, temos de inserir o ponto e vírgula e colocar qual posição desejamos saber. Por exemplo =MAIOR(B4:B13;6) ou =MENOR(B2:B7;3).</span></p>
+<p><a href="https://funcaoexcel.com.br/maximominimo-e-maiormenor/" target="_blank" rel="noopener noreferrer">https://funcaoexcel.com.br/maximominimo-e-maiormenor/</a></p>
+<h2>Função SE</h2>
+<p><span style="font-weight: 300;">É a mais popular e também a mais cobrada função condicional do Excel. Por meio dela, os valores (que podem ser texto ou número). Estes serão analisados e o resultado será verdadeiro ou falso, conforme o teste proposto por você. Muito utilizada como complemento em outras funções, ela apresenta, em seu quadro de argumentos, a sequência =SE(teste_logico;”valor_se_verdadeiro”;”valor_se_falso”), onde:</span></p>
+<p><span style="font-weight: 300;">teste_lógico: argumento obrigatório que consiste no valor ou expressão que será avaliado como VERDADEIRO ou FALSO. É o teste a ser feito.</span></p>
+<p><span style="font-weight: 300;">valor_se_verdadeiro: argumento opcional, onde o usuário pode escolher qual valor ou expressão retornará caso o resultado do teste_lógico for verdadeiro.</span></p>
+<p><span style="font-weight: 300;">valor_se_falso: argumento opcional que permite a escolha do valor ou expressão caso o teste_lógico for falso.</span></p>
+<p><span style="font-weight: 300;"><strong>Dica:</strong> nunca esqueça de colocar os valores a serem retornados entre aspas. É obrigatório.</span></p>
+<p><a href="https://funcaoexcel.com.br/como-usar-a-funcao-se/" target="_blank" rel="noopener noreferrer">https://funcaoexcel.com.br/como-usar-a-funcao-se/</a></p>
+<h2>Função CONT.SE</h2>
+<p><span style="font-weight: 300;">Essa função conta a quantidade de um certo tipo de dados específico em uma planilha. Com ela você pode refinar sua planilha para que o Excel retorne apenas os valores que você deseja, criando uma peneira. Com ela, podemos buscar por mais de uma referência ao mesmo tempo. A sintaxe da fórmula é =CONT.SE(intervalo de células; “critério ou condição”). Ela pode ser aplicada tanto em valores numéricos quanto em palavras e letras.</span></p>
+<p><a href="https://funcaoexcel.com.br/usando-as-funcoes-de-contagem/" target="_blank" rel="noopener noreferrer">https://funcaoexcel.com.br/usando-as-funcoes-de-contagem/</a></p>
+<h2>Função CONT.SES</h2>
+<p><span style="font-weight: 300;">Essa fórmula é idêntica à anterior em estruturação e utilidade, porém é usada para casos onde você deseja criar uma seleção peneirando com mais de um critério. Como por exemplo, se você quer identificar todas as células que contém frutas e também as que estão frescas. A sintaxe seria =CONT.SES(C5:C16;”Fruta”;D5:D16;”Fresca”).</span></p>
+<p><a href="https://funcaoexcel.com.br/usando-as-funcoes-de-contagem/"><span style="font-weight: 300;">https://funcaoexcel.com.br/usando-as-funcoes-de-contagem/</span></a></p>
+<h2>Função SOMASE</h2>
+<p><span style="font-weight: 300;">Esta função, em vez de domar o número de registros que correspondem a um critério específico, soma os valores desses registros correspondentes. Com ela, é possível dizer ao Excel o que ele tem de somar, automaticamente, sempre que algum critério pré-determinado pelo usuário for identificado. A sintaxe será =SOMASE(intervalo;critérios;intervalo_soma)</span></p>
+<p><a href="https://funcaoexcel.com.br/funcoes-de-soma/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 300;">https://funcaoexcel.com.br/funcoes-de-soma/</span></a></p>
+<h2>Função PROCV</h2>
+<p><span style="font-weight: 300;">Encontra um valor em uma tabela e retorna o valor da mesma linha, mas de outra coluna específica. A síntaxe é =PROCV(valor_procurado,matriz_tabela,núm_índice_coluna,[procurar_intervalo])</span></p>
+<ul>
+<li style="font-weight: 300;"><span style="font-weight: 300;">valor_procurado: é o que você deseja localizar para fazer as referências posteriores.</span></li>
+<li style="font-weight: 300;"><span style="font-weight: 300;">matriz_tabela seleção de todo o campo de dados</span></li>
+<li style="font-weight: 300;"><span style="font-weight: 300;">num_índice é a coluna onde o Excel vai buscar a correspondência</span></li>
+</ul>
+<p><span style="font-weight: 300;">Procurar intervalo é uma opção não obrigatória onde se for preenchido “verdadeiro”, o Excel retornará um valor aproximado, caso não ache nada exato, ou se for preenchido com “falso”, ele só retornará o valor exato. Se ficar em branco, ele entenderá como “falso” e retornará somente o que for exato à busca.</span></p>
+<p><a href="https://funcaoexcel.com.br/como-usar-procv/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 300;">https://funcaoexcel.com.br/como-usar-procv/</span></a></p>
+<h2>Função PROCH</h2>
+<p><span style="font-weight: 300;">Faz uma busca parecida com a do PROCV, mas na horizontal. Sua sintaxe é =PROCH(valor_procurado,matriz_tabela,núm_índice_lin,[procurar_intervalo]).</span></p>
+<p><a href="https://funcaoexcel.com.br/como-usar-proch/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 300;">https://funcaoexcel.com.br/como-usar-proch/</span></a></p>
+<h2>Função CONTAR.VAZIO</h2>
+<p><span style="font-weight: 300;">Permite que você conte dentro de um intervalo a quantidade de células que possuem valores vazios, ou seja, que estão em branco. A sintaxe da fórmula é: =CONTAR.VAZIO(Intervalo) Células com fórmulas que retornam &#8220;&#8221; (texto vazio) também são contadas. Células com valores nulos não são contadas.</span></p>
+<p><a href="https://funcaoexcel.com.br/usando-as-funcoes-de-contagem/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 300;">https://funcaoexcel.com.br/usando-as-funcoes-de-contagem/</span></a></p>
+<h2>Função CONT.VALORES</h2>
+<p><span style="font-weight: 300;">Ao contrário da função acima, que calculava o número de células vazias (independentemente de ser número ou texto), essa daqui calcula o número de células não vazias e os valores na lista de argumentos. A sintaxe é =CONT.VALORES(valor1:valor2) onde valor1; valor2&#8230; são os intervalos que pode você pode colocar como referência.</span></p>
+<p><a href="https://funcaoexcel.com.br/usando-as-funcoes-de-contagem/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 300;">https://funcaoexcel.com.br/usando-as-funcoes-de-contagem/</span></a></p>
+<h2>Função ARRED</h2>
+<p><span style="font-weight: 300;">Arredonda um número para um número específico de X dígitos. A sintaxe será =ARRED(número,núm_dígitos) onde &#8220;número&#8221; é o número que você deseja arredondar e &#8220;núm_dígitos&#8221; especifica o número de dígitos para o qual você deseja arredondar o número. Se núm_dígitos for definido como 0 (zero), então o número será arredondado para o inteiro mais próximo. Se núm_dígitos for menor que 0, então o número será arredondado à esquerda do ponto decimal, na proporção do número negativo (-1 arredonda o digito 1 antes da vírgula, -2 o segundo, etc.)</span></p>
+<p><a href="https://funcaoexcel.com.br/arredondando-numeros/" target="_blank" rel="noopener noreferrer"><span style="font-weight: 300;">https://funcaoexcel.com.br/arredondando-numeros/</span></a></p>
+<h2>Função INT</h2>
+<p><span style="font-weight: 300;">Retorna a porção inteira de um número. A sintaxe é =INT(número). Se número contiver Null, Nulo será retornado. A função Int remove a parte fracionária do número e retornam o valor inteiro resultante. Se o número for negativo, a Int vai retornar o primeiro número inteiro negativo menor ou igual ao número, pois a função retorna sempre o valor para baixo, tanto se for positivo ou negativo.</span></p>
+<h2>Função CONCATENAR</h2>
+<p><span style="font-weight: 300;">Agrupa várias sequências de caracteres de texto em uma única sequência de caracteres de texto. A sintaxe é =CONCATENAR(texto1; texto2;&#8230;) Na função podem ser concatenados até 30 itens. Os itens de texto podem ser sequência de caracteres de texto, números ou referências de célula única. Atente para o detalhe que não funciona se você referenciar a um intervalo de células, por exemplo: B5:B8, o correto é B5;B6;B7;B8. Pode ser usado o símbolo &#8220;e comercial&#8221; (&amp;) como o operador do cálculo. Esse método, embora não seja uma função, pode também ser usado para conseguirmos o mesmo resultado da função concatenar</span></p>
+<h2>Função LOCALIZAR</h2>
+<p><span style="font-weight: 300;">Retorna o número do caractere no qual uma sequência de caracteres ou de texto específica é primeiro encontrada, começando com núm_inicial. Sua sintaxe é =LOCALIZAR(&#8220;texto_procurado&#8221;, no_texto, [núm_inicial]) onde:</span></p>
+<ul>
+<li style="font-weight: 300;"><span style="font-weight: 300;">texto_procurado é o texto que você deseja localizar. Sempre entre aspas, pois não é valor numérico e sim, de texto.</span></li>
+<li style="font-weight: 300;"><span style="font-weight: 300;">no_texto é o texto no qual você deseja localizar o texto_procurado.</span></li>
+<li style="font-weight: 300;"><span style="font-weight: 300;">núm_inicial significa o número do caractere em no_texto no qual você deseja iniciar a pesquisa. Se você quiser pesquisar desde o início, use valor 1.</span></li>
+</ul>
+            
+        </div>
+      </div>
+    </section>
+    <section id="formulas-sheets">
+  <h2 id="titulo-sheets">Fórmulas - Google Sheets</h2>
+  <p class="lead">Principais funções do Google Sheets com exemplos práticos</p>
+
+  <div class="grid">
+    <div>
+      <h3>Funções Matemáticas e Estatísticas</h3>
+      
+      <h2>Função SOMA</h2>
+      <p><span style="font-weight: 300;">Sintaxe: <code>=SOMA(intervalo)</code></span></p>
+      <p><span style="font-weight: 300;">Exemplo: <code>=SOMA(A1:A10)</code></span></p>
+      <p><span style="font-weight: 300;">Soma todos os valores dentro do intervalo especificado. No exemplo, soma de A1 até A10.</span></p>
+
+      <h2>Função MÉDIA</h2>
+      <p><span style="font-weight: 300;">Sintaxe: <code>=MÉDIA(intervalo)</code></span></p>
+      <p><span style="font-weight: 300;">Exemplo: <code>=MÉDIA(A1:A3)</code></span></p>
+      <p><span style="font-weight: 300;">Calcula a média aritmética dos valores no intervalo indicado.</span></p>
+
+      <h2>Funções MÁXIMO e MÍNIMO</h2>
+      <p><span style="font-weight: 300;">Sintaxe: <code>=MÁXIMO(intervalo)</code> ou <code>=MÍNIMO(intervalo)</code></span></p>
+      <p><span style="font-weight: 300;">Exemplo: <code>=MÁXIMO(A1:A10)</code> retorna o maior valor. <br><code>=MÍNIMO(A1:A10)</code> retorna o menor valor.</span></p>
+
+      <h2>Função ARRED</h2>
+      <p><span style="font-weight: 300;">Sintaxe: <code>=ARRED(valor; número_de_casas)</code></span></p>
+      <p><span style="font-weight: 300;">Exemplo: <code>=ARRED(A1; 2)</code> arredonda o número em A1 para duas casas decimais.</span></p>
+    </div>
+
+    <div>
+      <h3>Funções Lógicas</h3>
+      
+      <h2>Função SE</h2>
+      <p><span style="font-weight: 300;">Sintaxe: <code>=SE(condição; valor_se_verdadeiro; valor_se_falso)</code></span></p>
+      <p><span style="font-weight: 300;">Exemplo: <code>=SE(A1>10; "Maior que 10"; "Menor ou igual a 10")</code></span></p>
+      <p><span style="font-weight: 300;">Avalia uma condição e retorna um valor caso seja verdadeiro, e outro caso seja falso.</span></p>
+
+      <h2>Função E</h2>
+      <p><span style="font-weight: 300;">Sintaxe: <code>=E(condição1; condição2; ...)</code></span></p>
+      <p><span style="font-weight: 300;">Exemplo: <code>=E(A1>5; B1<20)</code></span></p>
+      <p><span style="font-weight: 300;">Retorna VERDADEIRO se todas as condições forem satisfeitas.</span></p>
+
+      <h2>Função OU</h2>
+      <p><span style="font-weight: 300;">Sintaxe: <code>=OU(condição1; condição2; ...)</code></span></p>
+      <p><span style="font-weight: 300;">Exemplo: <code>=OU(A1>5; B1<20)</code></span></p>
+      <p><span style="font-weight: 300;">Retorna VERDADEIRO se pelo menos uma condição for atendida.</span></p>
+    </div>
+
+    <div>
+      <h3>Funções de Data e Hora</h3>
+
+      <h2>Função HOJE</h2>
+      <p><span style="font-weight: 300;">Sintaxe: <code>=HOJE()</code></span></p>
+      <p><span style="font-weight: 300;">Retorna a data atual do sistema.</span></p>
+
+      <h2>Função AGORA</h2>
+      <p><span style="font-weight: 300;">Sintaxe: <code>=AGORA()</code></span></p>
+      <p><span style="font-weight: 300;">Retorna a data e a hora atuais.</span></p>
+
+      <h2>Função DIATRABALHOTOTAL</h2>
+      <p><span style="font-weight: 300;">Sintaxe: <code>=DIATRABALHOTOTAL(início; fim; [feriados])</code></span></p>
+      <p><span style="font-weight: 300;">Exemplo: <code>=DIATRABALHOTOTAL(A1; B1)</code></span></p>
+      <p><span style="font-weight: 300;">Calcula o número de dias úteis entre duas datas, considerando finais de semana e feriados (caso informados).</span></p>
+    </div>
+  </div>
+</section>
+    <section class="links" id="lin">
+      <h2>Links Úteis</h2>
+      <a class="card-link" href="https://support.microsoft.com/pt-br/windows/atalhos-de-teclado-no-windows-10-9f7b5aaf-0aef-4f2d-9df5-1c1b8e6c3f94" target="_blank" rel="noopener noreferrer">
+        <span>Atalhos do Windows (oficial)</span>
+        <span>🔗</span>
+      <a class="card-link" href="https://www.youtube.com/watch?v=Y2AcljPrsT4" target="_blank" rel="noopener noreferrer">
+        <span>Vídeo: Google sheets para concursos</span>
+        <span>▶️</span>
+      <a class="card-link" href="https://www.youtube.com/watch?v=LLtqkw6o-UY" target="_blank" rel="noopener noreferrer">
+        <span>Vídeo: Interface do Google Docs</span>
+        <span>▶️</span>
+        <a class="card-link" href="https://www.youtube.com/watch?v=V3jH1bX4n8I" target="_blank" rel="noopener noreferrer">
+        <span>Vídeo: Interface do Word</span>
+        <span>▶️</span>
+        <a class="card-link" href="https://hmtec.com.br/quais-as-principais-diferencas-entre-o-microsoft-word-e-o-google-docs/" target="_blank" rel="noopener noreferrer">
+        <span>Diferenças entre Docs e Word</span>
+        <span>🔗</span>
+        <a class="card-link" href="https://support.microsoft.com/pt-br/office/atalhos-de-teclado-no-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f" target="_blank" rel="noopener noreferrer">
+        <span>Atalhos do Excel(oficial)</span>
+        <span>🔗</span>
+      </section>
+      
     <section id="sobre" aria-labelledby="titulo-sobre">
       <h2 id="titulo-sobre">Sobre</h2>
-      <p class="lead">Este guia foi gerado para fornecer uma referência rápida de atalhos do Windows e do Word, criado por Igor Costa. </p>
+      <p class="lead">criado por Igor Costa. </p>
       <p class="muted">Dica: para transformar esta página em um arquivo local, salve como <code>index.html</code> e abra no navegador.</p>
     </section>
 
